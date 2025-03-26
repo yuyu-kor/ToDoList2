@@ -1,9 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
+    margin: 0;
     background-image: url('./images/pastel-watercolor-painted-background_23-2148959637.avif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,69 +7,43 @@ body {
 
 .container {
     background-color: white;
-    max-width: 800px;
-    min-height: 100vh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 100vh;
 }
 
-.header-txt {
-    margin-bottom: .5em;
-    font-weight: bold;
+.input-area {
+    margin-bottom: 1em;
+}
+
+#under-line {
+    position: absolute;
+    background-color: pink;
+    height: 4px;
+    width: 50px;
+    top: 52px;
+    padding: 0;
 }
 
 .task-area {
-    border: 1px solid rgb(252, 237, 243);
-    margin-top: 2em;
-}
-
-.input-txt {
-    width: 80%;
-    border: 1px solid rgb(255, 211, 229);
-}
-
-.plus-button {
-    background-color: rgb(255, 211, 229);
-    border: 0px;
-    padding: 2px 6px;
+    border: 1px solid gray;
 }
 
 .task-tabs {
     display: flex;
-    border-bottom: 1px solid rgb(255, 211, 229);
+    border-bottom: 1px solid gray;
     position: relative;
 }
 
-.task-tabs div{
+.task-tabs div {
     padding: 1em;
     cursor: pointer;
-}
-
-#under-line {
-    height: 4px;
-    background-color: rgb(255, 211, 229);
-    position: absolute;
-    width: 50px;
-    left: 0;
-    top: 52px;
-    padding: 0;
 }
 
 .task {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1em;
-}
-
-.check-button, .delete-button {
-    border: 0;
-    background-color: white;
-    color: rgb(252, 195, 219);
-    font-size: 1.5em;
-    margin-right: 12px;
 }
 
 .task-done {
     text-decoration: line-through;
-    color: gray;
 }
